@@ -1,0 +1,62 @@
+&control
+  calculation = 'scf'
+  restart_mode = 'from_scratch'
+  tstress = .true.
+  tprnfor = .true.
+  outdir = './ref'
+  prefix = 'Gr-hex'
+  pseudo_dir = './pseudo'
+  verbosity = 'high'
+ /
+
+ &system
+  ibrav = 4
+  celldm(1) = 4.649
+  celldm(3) = 8
+  nat = 2
+  ntyp = 1
+  ecutwfc = 64
+  ecutrho = 512
+  occupations = 'smearing'
+  smearing = 'fd'
+  degauss = 6.336d-7
+ /
+
+ &electrons
+  conv_thr = 1.d-12
+  diagonalization = 'david'
+  mixing_beta = 0.3
+ /
+
+ &shirley
+  use_shirley = .false.
+ /
+
+ ATOMIC_SPECIES
+  C  12.0  C.pz-rrkjus.UPF
+
+ ATOMIC_POSITIONS bohr
+  C 0.000 0.000 0.000
+  C 0.000 2.683 0.000
+
+ K_POINTS automatic
+  16 16 1 1 1 0
+
+@run
+
+ &control
+  calculation = 'nscf'
+ /
+
+ &system
+  nosym = .true.
+ /
+
+ K_POINTS crystal_b
+  4
+  0.0 0.0 0.0 32
+  0.33333 0.33333 0.0 32
+  0.5 0.0 0.0 32
+  0.0 0.0 0.0 32
+
+@run

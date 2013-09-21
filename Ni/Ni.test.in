@@ -1,0 +1,91 @@
+ &control
+  calculation = 'scf'
+  title = 'nickel'
+  restart_mode = 'from_scratch'
+  wf_collect = .true.
+  tstress = .true.
+  tprnfor = .true.
+  outdir = './test'
+  prefix = 'Ni'
+  pseudo_dir = './pseudo'
+ /
+
+ &system
+  ibrav = 2
+  celldm(1) = 6.48
+  nat = 1
+  ntyp = 1
+  nspin = 2
+  starting_magnetization(1) = 0.7
+  ecutwfc = 48
+  ecutrho = 384
+  occupations = 'smearing'
+  smearing = 'methfessel-paxton'
+  degauss = 0.02
+ /
+
+ &electrons
+  conv_thr = 1.d-12
+  diagonalization = 'david'
+ /
+
+ &shirley
+  use_shirley = .true.
+  basis_life = 3
+  freeze_basis = 1.d-6
+!  max_basis_size = 288
+!  trace_tol = 1.525875e-7
+  trace_tol = 4.d-7
+ /
+
+ ATOMIC_SPECIES
+  Ni 58.69 NiUS.RRKJ3.UPF
+
+ ATOMIC_POSITIONS
+  Ni 0.0 0.0 0.0
+
+ K_POINTS crystal
+  7
+  0.0 0.0 0.0 1.0
+  0.5 0.0 0.0 1.0
+  0.0 0.5 0.0 1.0
+  0.0 0.0 0.5 1.0
+  0.5 0.5 0.0 1.0
+  0.0 0.5 0.5 1.0
+  0.5 0.0 0.5 1.0
+
+
+ Q_POINTS automatic
+  16 16 16 1 1 1
+
+@run
+
+ &control
+  calculation = 'nscf'
+ /
+
+ &system
+  nosym = .true.
+ /
+
+ &electrons
+  diagonalization = 'cg'
+ /
+
+ Q_POINTS crystal_b
+  12
+  0.0 0.0 0.0 32
+  0.5 0.0 0.5 16
+  0.5 0.25 0.75 8
+  0.375 0.375 0.75 42
+  0.0 0.0 0.0 39
+  0.5 0.5 0.5 14
+  0.625 0.25 0.625 8
+  0.5 0.25 0.75 16
+  0.5 0.5 0.5 14
+  0.375 0.375 0.75 0
+  0.625 0.25 0.625 8
+  0.5 0.0 0.5 14
+
+@run 
+
