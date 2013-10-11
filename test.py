@@ -20,7 +20,7 @@ def compare_vals(name, oval, rval, tol = 0.001):
 # define a value tester
 def test_output(pattern, position, name, out, ref, tol):
   out.seek(0)
-  val_r = None
+  val_o = None
   for line in out:
     if pattern in line:
       toks = line.split()
@@ -33,6 +33,7 @@ def test_output(pattern, position, name, out, ref, tol):
         val_o = float(tmp)
       except ValueError:
         val_o = 0
+  val_r = None
   ref.seek(0)
   for line in ref:
     if pattern in line:
@@ -46,9 +47,8 @@ def test_output(pattern, position, name, out, ref, tol):
         val_r = float(tmp)
       except ValueError:
         val_r = 0
-  if val_r == None:
-    return 
-  compare_vals(name, val_o, val_r, tol)
+  if val_r != None:
+    compare_vals(name, val_o, val_r, tol)
   return (val_o, val_r)
 
 def diff_eigenvalues(out_name, ref_name, efo = 0., efr = 0., nb = -1):
@@ -131,7 +131,7 @@ def run_test(inputs, exe, testdir, np = 1, ipm = False, force = False, nb = -1):
   copy2(exe + '/pw.x', testdir)
   copy2(exe + '/pp.x', testdir)
   copy2(exe + '/plotrho.x', testdir)
-  copy2(exe + '../scripts/run.py', testdir)
+  copy2('./run.py', testdir)
   cwd = getcwd()
   chdir(testdir)
 
