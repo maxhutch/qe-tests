@@ -5,7 +5,7 @@
   tprnfor = .true.
   outdir = './ref'
   prefix = 'Gr-hex'
-  pseudo_dir = './pseudo'
+  pseudo_dir = '../pseudo'
   verbosity = 'high'
  /
 

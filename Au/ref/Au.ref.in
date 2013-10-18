@@ -6,7 +6,7 @@
   tprnfor = .true.
   outdir = './raw'
   prefix = 'Au'
-  pseudo_dir = './pseudo'
+  pseudo_dir = '../pseudo'
  /
 
  &system

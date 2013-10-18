@@ -6,7 +6,7 @@
   tprnfor = .true.
   outdir = './raw'
   prefix = 'Na'
-  pseudo_dir = './pseudo'
+  pseudo_dir = '../pseudo'
  /
 
  &system
@@ -38,7 +38,7 @@
  K_POINTS automatic
   20 20 20 1 1 1
 
-@run
+@run 
 
  &control
   calculation = 'nscf'
@@ -54,5 +54,5 @@
   0.0 0.0 0.0 100
   1.0 -1.0 -1.0 100
 
-@run 
+@run
 

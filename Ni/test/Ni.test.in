@@ -7,7 +7,7 @@
   tprnfor = .true.
   outdir = './ref'
   prefix = 'Ni'
-  pseudo_dir = './pseudo'
+  pseudo_dir = '../pseudo'
  /
 
  &system
