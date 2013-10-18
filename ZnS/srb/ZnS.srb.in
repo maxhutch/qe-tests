@@ -1,0 +1,78 @@
+ &control
+  calculation = 'scf'
+  title = 'zincblende'
+  restart_mode = 'from_scratch'
+  wf_collect = .true.
+  tstress = .true.
+  tprnfor = .true.
+  outdir = './ref'
+  prefix = 'ZnS'
+  pseudo_dir = '../pseudo'
+ /
+
+ &system
+  ibrav = 2
+  celldm(1) = 10.065247
+  nat  = 2
+  ntyp = 2
+  ecutwfc = 64.0
+  ecutrho = 512.0
+ /
+
+ &electrons
+  conv_thr = 1.d-12
+  diagonalization = 'david'
+ /
+
+ &shirley
+  use_shirley = .true.
+ /
+
+ ATOMIC_SPECIES
+  Zn  65.41  Zn.pbe-van.UPF
+  S   32.07   S.pbe-van_bm.UPF
+
+ ATOMIC_POSITIONS crystal
+  Zn -0.125 -0.125 -0.125
+  S   0.125  0.125  0.125
+
+ K_POINTS crystal
+  7
+  0.0 0.0 0.0 1.0
+  0.5 0.0 0.0 1.0
+  0.0 0.5 0.0 1.0
+  0.0 0.0 0.5 1.0
+  0.0 0.5 0.5 1.0
+  0.5 0.0 0.5 1.0
+  0.5 0.5 0.0 1.0
+
+ Q_POINTS automatic
+  8 8 8 0 0 0
+
+@run
+
+ &control
+  calculation = 'nscf'
+ /
+
+ &system
+  nosym = .true.
+ /
+
+ Q_POINTS crystal_b
+  12
+  0.0 0.0 0.0 32
+  0.5 0.0 0.5 16
+  0.5 0.25 0.75 8
+  0.375 0.375 0.75 42
+  0.0 0.0 0.0 39
+  0.5 0.5 0.5 14
+  0.625 0.25 0.625 8
+  0.5 0.25 0.75 16
+  0.5 0.5 0.5 14
+  0.375 0.375 0.75 0
+  0.625 0.25 0.625 8
+  0.5 0.0 0.5 14
+
+@run
+
