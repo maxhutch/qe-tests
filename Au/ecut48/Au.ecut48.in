@@ -14,8 +14,8 @@
   celldm(1) = 7.710
   nat = 1
   ntyp = 1
-  ecutwfc = 32
-  ecutrho = 256
+  ecutwfc = 48
+  ecutrho = 384
   occupations = 'smearing'
   degauss = 7.d-6
  /
