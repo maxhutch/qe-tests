@@ -1,0 +1,70 @@
+ &control
+  calculation = 'scf'
+  title = 'Sodiumbcc'
+  restart_mode = 'from_scratch'
+  tstress = .true.
+  tprnfor = .true.
+  outdir = './raw'
+  prefix = 'Na'
+  pseudo_dir = '../pseudo'
+ /
+
+ &system
+  ibrav = 3
+  celldm(1) = 7.9935
+  nat = 1
+  ntyp = 1
+  ecutwfc = 32
+  ecutrho = 256
+  occupations = 'smearing'
+  degauss = 7.d-6
+ /
+
+ &electrons
+  conv_thr = 1.d-12
+  diagonalization = 'david'
+ /
+
+ &shirley
+  use_shirley = .true. 
+  trace_tol = 1.D-4
+  basis_life = 3
+ /
+
+ ATOMIC_SPECIES
+   Na  26.0  Na.cpi.UPF
+
+ ATOMIC_POSITIONS crystal
+  Na    0.0000000  0.0000000  0.0000000
+
+ K_POINTS crystal
+  7
+  0.0 0.0 0.0 1.0
+  0.5 0.0 0.0 1.0
+  0.0 0.5 0.0 1.0
+  0.0 0.0 0.5 1.0
+  0.0 0.5 0.5 1.0
+  0.5 0.0 0.5 1.0
+  0.5 0.5 0.0 1.0
+
+ Q_POINTS automatic
+  20 20 20 1 1 1
+
+@run 
+
+ &control
+  calculation = 'nscf'
+ /
+
+ &system
+  nbnd = 8
+  nosym = .true.
+ /
+
+ Q_POINTS crystal_b
+  2
+  0.0 0.0 0.0 100
+  1.0 -1.0 -1.0 100
+
+@run
+
