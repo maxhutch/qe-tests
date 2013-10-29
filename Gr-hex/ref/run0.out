@@ -1,5 +1,5 @@
 
-     Program PWSCF v.5.0.2 starts on 18Oct2013 at  8:44: 8 
+     Program PWSCF v.5.0.2 starts on 28Oct2013 at 21: 2:53 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -582,9 +582,9 @@ B_2    1.00 -1.00 -1.00  1.00
      negative rho (up, down):  1.292E-05 0.000E+00
      Starting wfc are    8 randomized atomic wfcs
 
-     total cpu time spent up to now is       12.3 secs
+     total cpu time spent up to now is        8.0 secs
 
-     per-process dynamical memory:   213.0 Mb
+     per-process dynamical memory:   212.3 Mb
 
      Self-consistent Calculation
 
@@ -594,7 +594,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  5.287E-06 0.000E+00
 
-     total cpu time spent up to now is       68.2 secs
+     total cpu time spent up to now is       44.8 secs
 
      total energy              =     -22.87940339 Ry
      Harris-Foulkes estimate   =     -22.95837275 Ry
@@ -606,7 +606,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  8.187E-06 0.000E+00
 
-     total cpu time spent up to now is       97.8 secs
+     total cpu time spent up to now is       64.0 secs
 
      total energy              =     -22.83376860 Ry
      Harris-Foulkes estimate   =     -22.88473922 Ry
@@ -618,7 +618,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  7.219E-06 0.000E+00
 
-     total cpu time spent up to now is      150.3 secs
+     total cpu time spent up to now is       99.3 secs
 
      total energy              =     -22.85390105 Ry
      Harris-Foulkes estimate   =     -22.85553151 Ry
@@ -630,7 +630,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.152E-05 0.000E+00
 
-     total cpu time spent up to now is      194.5 secs
+     total cpu time spent up to now is      128.6 secs
 
      total energy              =     -22.85395196 Ry
      Harris-Foulkes estimate   =     -22.85425508 Ry
@@ -642,7 +642,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.134E-05 0.000E+00
 
-     total cpu time spent up to now is      235.5 secs
+     total cpu time spent up to now is      155.7 secs
 
      total energy              =     -22.85406525 Ry
      Harris-Foulkes estimate   =     -22.85415738 Ry
@@ -654,7 +654,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.106E-05 0.000E+00
 
-     total cpu time spent up to now is      274.8 secs
+     total cpu time spent up to now is      181.6 secs
 
      total energy              =     -22.85409344 Ry
      Harris-Foulkes estimate   =     -22.85409343 Ry
@@ -666,7 +666,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.101E-05 0.000E+00
 
-     total cpu time spent up to now is      317.8 secs
+     total cpu time spent up to now is      210.2 secs
 
      total energy              =     -22.85409492 Ry
      Harris-Foulkes estimate   =     -22.85409480 Ry
@@ -678,7 +678,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.090E-05 0.000E+00
 
-     total cpu time spent up to now is      347.0 secs
+     total cpu time spent up to now is      229.2 secs
 
      total energy              =     -22.85409493 Ry
      Harris-Foulkes estimate   =     -22.85409493 Ry
@@ -690,7 +690,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.080E-05 0.000E+00
 
-     total cpu time spent up to now is      387.3 secs
+     total cpu time spent up to now is      255.8 secs
 
      total energy              =     -22.85409493 Ry
      Harris-Foulkes estimate   =     -22.85409493 Ry
@@ -702,10 +702,10 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.073E-05 0.000E+00
 
-     total cpu time spent up to now is      421.9 secs
+     total cpu time spent up to now is      278.5 secs
 
      total energy              =     -22.85409493 Ry
-     Harris-Foulkes estimate   =     -22.85409494 Ry
+     Harris-Foulkes estimate   =     -22.85409493 Ry
      estimated scf accuracy    <          7.3E-10 Ry
 
      iteration # 11     ecut=    64.00 Ry     beta=0.30
@@ -714,7 +714,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.069E-05 0.000E+00
 
-     total cpu time spent up to now is      451.1 secs
+     total cpu time spent up to now is      297.5 secs
 
      total energy              =     -22.85409493 Ry
      Harris-Foulkes estimate   =     -22.85409493 Ry
@@ -726,7 +726,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.066E-05 0.000E+00
 
-     total cpu time spent up to now is      486.2 secs
+     total cpu time spent up to now is      320.5 secs
 
      total energy              =     -22.85409493 Ry
      Harris-Foulkes estimate   =     -22.85409493 Ry
@@ -738,7 +738,7 @@ B_2    1.00 -1.00 -1.00  1.00
 
      negative rho (up, down):  1.059E-05 0.000E+00
 
-     total cpu time spent up to now is      520.0 secs
+     total cpu time spent up to now is      342.7 secs
 
      End of self-consistent calculation
 
@@ -2142,7 +2142,7 @@ B_2    1.00 -1.00 -1.00  1.00
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
 
-     the Fermi energy is    -2.7964 ev
+     the Fermi energy is    -2.6099 ev
 
 !    total energy              =     -22.85409493 Ry
      Harris-Foulkes estimate   =     -22.85409493 Ry
@@ -2178,8 +2178,8 @@ B_2    1.00 -1.00 -1.00  1.00
      atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
      atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
      The SCF correction term to forces
-     atom    1 type  1   force =    -0.00000000    0.00000006   -0.00000000
-     atom    2 type  1   force =    -0.00000000   -0.00000003   -0.00000000
+     atom    1 type  1   force =    -0.00000000    0.00000006    0.00000000
+     atom    2 type  1   force =     0.00000000   -0.00000003    0.00000000
 
      Total force =     0.001697     Total SCF correction =     0.000000
 
@@ -2188,24 +2188,24 @@ B_2    1.00 -1.00 -1.00  1.00
 
           total   stress  (Ry/bohr**3)                   (kbar)     P=  -12.12
   -0.00012409   0.00000000   0.00000000        -18.25      0.00      0.00
-   0.00000000  -0.00012277   0.00000000          0.00    -18.06      0.00
-   0.00000000   0.00000000  -0.00000024          0.00      0.00     -0.04
+   0.00000000  -0.00012277  -0.00000000          0.00    -18.06     -0.00
+   0.00000000  -0.00000000  -0.00000024          0.00     -0.00     -0.04
 
      kinetic stress (kbar)   1870.77      0.00      0.00
                                 0.00   1870.11      0.00
                                 0.00      0.00   2153.22
 
-     local   stress (kbar) -49471.19      0.00      0.00
+     local   stress (kbar) -49471.19      0.00     -0.00
                                 0.00 -49475.13      0.00
-                                0.00      0.00  49112.31
+                               -0.00      0.00  49112.31
 
      nonloc. stress (kbar)    657.42      0.00      0.00
                                 0.00    657.69      0.00
                                 0.00      0.00    577.41
 
-     hartree stress (kbar)  23423.23     -0.00     -0.00
+     hartree stress (kbar)  23423.23     -0.00      0.00
                                -0.00  23423.77     -0.00
-                               -0.00     -0.00 -23250.69
+                                0.00     -0.00 -23250.69
 
      exc-cor stress (kbar)   -451.47      0.00      0.00
                                 0.00   -451.47      0.00
@@ -2227,10 +2227,6 @@ B_2    1.00 -1.00 -1.00  1.00
                                 0.00      0.00      0.00
                                 0.00      0.00      0.00
 
-     XDM     stress (kbar)      0.00      0.00      0.00
-                                0.00      0.00      0.00
-                                0.00      0.00      0.00
-
      dft-nl  stress (kbar)      0.00      0.00      0.00
                                 0.00      0.00      0.00
                                 0.00      0.00      0.00
@@ -2239,61 +2235,61 @@ B_2    1.00 -1.00 -1.00  1.00
 
      Writing output data file Gr-hex.save
  
-     init_run     :     12.10s CPU     12.28s WALL (       1 calls)
-     electrons    :    506.53s CPU    507.70s WALL (       1 calls)
-     forces       :      1.54s CPU      1.54s WALL (       1 calls)
-     stress       :      6.36s CPU      6.43s WALL (       1 calls)
+     init_run     :      7.91s CPU      7.96s WALL (       1 calls)
+     electrons    :    334.04s CPU    334.70s WALL (       1 calls)
+     forces       :      1.88s CPU      1.89s WALL (       1 calls)
+     stress       :      4.48s CPU      4.50s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :     11.26s CPU     11.36s WALL (       1 calls)
-     potinit      :      0.16s CPU      0.16s WALL (       1 calls)
+     wfcinit      :      7.32s CPU      7.36s WALL (       1 calls)
+     potinit      :      0.11s CPU      0.11s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    426.46s CPU    427.26s WALL (      13 calls)
-     sum_band     :     76.72s CPU     76.94s WALL (      13 calls)
-     v_of_rho     :      0.62s CPU      0.60s WALL (      14 calls)
-     v_h          :      0.23s CPU      0.23s WALL (      14 calls)
-     v_xc         :      0.39s CPU      0.37s WALL (      14 calls)
-     newd         :      2.14s CPU      2.26s WALL (      14 calls)
-     mix_rho      :      0.45s CPU      0.49s WALL (      13 calls)
+     c_bands      :    283.80s CPU    284.28s WALL (      13 calls)
+     sum_band     :     48.06s CPU     48.17s WALL (      13 calls)
+     v_of_rho     :      0.36s CPU      0.36s WALL (      14 calls)
+     v_h          :      0.15s CPU      0.15s WALL (      14 calls)
+     v_xc         :      0.21s CPU      0.22s WALL (      14 calls)
+     newd         :      1.41s CPU      1.46s WALL (      14 calls)
+     mix_rho      :      0.34s CPU      0.34s WALL (      13 calls)
 
      Called by c_bands:
-     init_us_2    :      8.78s CPU      8.97s WALL (    5800 calls)
-     cegterg      :    408.95s CPU    409.88s WALL (    2600 calls)
+     init_us_2    :      5.34s CPU      5.40s WALL (    5800 calls)
+     cegterg      :    272.73s CPU    273.14s WALL (    2600 calls)
 
      Called by sum_band:
-     sum_band:bec :      0.02s CPU      0.01s WALL (    2600 calls)
-     addusdens    :      1.86s CPU      1.92s WALL (      13 calls)
+     sum_band:bec :      0.01s CPU      0.01s WALL (    2600 calls)
+     addusdens    :      1.21s CPU      1.25s WALL (      13 calls)
 
      Called by *egterg:
-     h_psi        :    374.37s CPU    375.28s WALL (   11891 calls)
-     s_psi        :      5.94s CPU      6.08s WALL (   11891 calls)
-     g_psi        :      4.84s CPU      4.80s WALL (    9091 calls)
-     cdiaghg      :      2.34s CPU      2.37s WALL (   11691 calls)
-     cegterg:over :     10.41s CPU     10.43s WALL (    9091 calls)
-     cegterg:upda :      8.52s CPU      8.26s WALL (    9091 calls)
-     cegterg:last :      4.50s CPU      4.41s WALL (    2890 calls)
+     h_psi        :    229.89s CPU    230.23s WALL (   11893 calls)
+     s_psi        :      7.55s CPU      7.60s WALL (   11893 calls)
+     g_psi        :      2.42s CPU      2.43s WALL (    9093 calls)
+     cdiaghg      :      1.48s CPU      1.49s WALL (   11693 calls)
+     cegterg:over :     18.04s CPU     18.03s WALL (    9093 calls)
+     cegterg:upda :      8.31s CPU      8.31s WALL (    9093 calls)
+     cegterg:last :      5.15s CPU      5.17s WALL (    2890 calls)
 
      Called by h_psi:
-     h_psi:vloc   :    359.93s CPU    360.83s WALL (   11891 calls)
-     h_psi:vnl    :     13.30s CPU     13.45s WALL (   11891 calls)
-     add_vuspsi   :      5.75s CPU      6.11s WALL (   11891 calls)
+     h_psi:vloc   :    209.52s CPU    209.84s WALL (   11893 calls)
+     h_psi:vnl    :     19.74s CPU     19.72s WALL (   11893 calls)
+     add_vuspsi   :      7.50s CPU      7.54s WALL (   11893 calls)
 
      General routines
-     calbec       :     10.20s CPU      9.89s WALL (   14891 calls)
-     fft          :      1.53s CPU      1.47s WALL (     127 calls)
-     ffts         :      0.11s CPU      0.09s WALL (      27 calls)
-     fftw         :    368.60s CPU    370.58s WALL (  141460 calls)
-     interpolate  :      0.49s CPU      0.46s WALL (      27 calls)
-     davcio       :      0.00s CPU      0.10s WALL (     200 calls)
+     calbec       :     16.99s CPU     16.95s WALL (   14893 calls)
+     fft          :      1.07s CPU      1.07s WALL (     127 calls)
+     ffts         :      0.07s CPU      0.07s WALL (      27 calls)
+     fftw         :    214.67s CPU    214.91s WALL (  141464 calls)
+     interpolate  :      0.33s CPU      0.33s WALL (      27 calls)
+     davcio       :      0.02s CPU      0.07s WALL (     200 calls)
  
      Parallel routines
-     fft_scatter  :     20.66s CPU     21.01s WALL (  141614 calls)
+     fft_scatter  :     14.74s CPU     14.70s WALL (  141618 calls)
  
-     PWSCF        :  8m46.94s CPU     8m48.51s WALL
+     PWSCF        :  5m48.61s CPU     5m49.46s WALL
 
  
-   This run was terminated on:   8:52:57  18Oct2013            
+   This run was terminated on:  21: 8:43  28Oct2013            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
