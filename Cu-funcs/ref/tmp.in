@@ -1,0 +1,49 @@
+ &control
+  title = 'Cu_fcc' 
+  calculation = 'nscf' 
+  pseudo_dir = '../pseudo' 
+  tprnfor = .true. 
+  prefix = 'Cu' 
+  restart_mode = 'from_scratch' 
+  outdir = './raw' 
+  tstress = .true. 
+ / 
+ &system
+  ecutwfc = 64 
+  occupations = 'smearing' 
+  celldm(1) = 6.8219 
+  ibrav = 2 
+  nosym = .true. 
+  degauss = 7.d-6 
+  nat = 1 
+  ntyp = 1 
+  ecutrho = 512 
+ / 
+ &electrons
+  diagonalization = 'david' 
+  conv_thr = 1.d-12 
+ / 
+ &shirley
+  use_shirley = .false. 
+ / 
+ ATOMIC_SPECIES
+  Cu 63.546  Cu.pbe-d-rrkjus.UPF
+ ATOMIC_POSITIONS crystal
+  Cu    0.0000000  0.0000000  0.0000000
+  K_POINTS tpiba
+  15
+  0.0  0.0  0.0  1.0
+  0.5  0.0  0.0  1.0
+  1.0  0.0  0.0  1.0
+  1.0  0.25 0.0  1.0
+  1.0  0.5  0.0  1.0
+  0.75 0.5  0.25 1.0
+  0.5  0.5  0.5  1.0
+  0.25 0.25 0.25 1.0
+  0.0  0.0  0.0  1.0
+  0.5  0.5  0.0  1.0
+  1.0  1.0  0.0  1.0
+  0.875 0.875 0.0 1.0
+  0.75 0.75 0.0  1.0
+  0.625 0.625 0.25  1.0
+  0.5 0.5 0.5 1.0
