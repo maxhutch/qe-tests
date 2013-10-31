@@ -1,0 +1,72 @@
+&control
+  calculation = 'scf'
+  restart_mode = 'from_scratch'
+  tstress = .true.
+  tprnfor = .true.
+  outdir = './raw'
+  prefix = 'C-diamond'
+  pseudo_dir = '../pseudo'
+ /
+
+ &system
+  ibrav = 2
+  celldm(1) = 6.74125
+  nat = 2
+  ntyp = 1
+  ecutwfc = 64
+  ecutrho = 512
+  occupations = 'smearing'
+  smearing = 'fd'
+  degauss = 6.336d-7
+ /
+
+ &electrons
+  conv_thr = 1.d-12
+  diagonalization = 'david'
+  mixing_beta = 0.3
+ /
+
+ &shirley
+  use_shirley = .false.
+ /
+
+ ATOMIC_SPECIES
+  C  12.010 C.pbe-rrkjus.UPF
+
+ ATOMIC_POSITIONS alat
+  C 0.000 0.000 0.000
+  C 0.250 0.250 0.250
+
+ K_POINTS automatic
+  8 8 8 1 1 1
+
+@run
+
+ &control
+  calculation = 'nscf'
+ /
+
+ &system
+  nosym = .true.
+ /
+
+  K_POINTS tpiba
+  15
+  0.0  0.0  0.0  1.0
+  0.5  0.0  0.0  1.0
+  1.0  0.0  0.0  1.0
+  1.0  0.25 0.0  1.0
+  1.0  0.5  0.0  1.0
+  0.75 0.5  0.25 1.0
+  0.5  0.5  0.5  1.0
+  0.25 0.25 0.25 1.0
+  0.0  0.0  0.0  1.0
+  0.5  0.5  0.0  1.0
+  1.0  1.0  0.0  1.0
+  0.875 0.875 0.0 1.0
+  0.75 0.75 0.0  1.0
+  0.625 0.625 0.25  1.0
+  0.5 0.5 0.5 1.0
+
+@run
+
