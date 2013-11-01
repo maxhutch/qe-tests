@@ -1,0 +1,72 @@
+&control
+  calculation = 'scf'
+  restart_mode = 'from_scratch'
+  tstress = .true.
+  tprnfor = .true.
+  outdir = './raw'
+  prefix = 'Ge-diamond'
+  pseudo_dir = '../pseudo'
+ /
+
+ &system
+  ibrav = 2
+  celldm(1) = 10.885
+  nat = 2
+  ntyp = 1
+  ecutwfc = 96
+  ecutrho = 768
+  occupations = 'smearing'
+  smearing = 'fd'
+  degauss = 6.336d-7
+ /
+
+ &electrons
+  conv_thr = 1.d-12
+  diagonalization = 'david'
+  mixing_beta = 0.3
+ /
+
+ &shirley
+  use_shirley = .false.
+ /
+
+ ATOMIC_SPECIES
+  Ge  72.64 Ge.pbe-dn-rrkjus_psl.0.2.2.UPF
+
+ ATOMIC_POSITIONS alat
+  Ge 0.000 0.000 0.000
+  Ge 0.250 0.250 0.250
+
+ K_POINTS automatic
+  16 16 16 1 1 1
+
+@run
+
+ &control
+  calculation = 'nscf'
+ /
+
+ &system
+  nosym = .true.
+ /
+
+  K_POINTS tpiba
+  15
+  0.0  0.0  0.0  1.0
+  0.5  0.0  0.0  1.0
+  1.0  0.0  0.0  1.0
+  1.0  0.25 0.0  1.0
+  1.0  0.5  0.0  1.0
+  0.75 0.5  0.25 1.0
+  0.5  0.5  0.5  1.0
+  0.25 0.25 0.25 1.0
+  0.0  0.0  0.0  1.0
+  0.5  0.5  0.0  1.0
+  1.0  1.0  0.0  1.0
+  0.875 0.875 0.0 1.0
+  0.75 0.75 0.0  1.0
+  0.625 0.625 0.25  1.0
+  0.5 0.5 0.5 1.0
+
+@run
+
