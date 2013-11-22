@@ -15,8 +15,8 @@
   celldm(3) = 8
   nat = 2
   ntyp = 1
-  ecutwfc = 32
-  ecutrho = 256
+  ecutwfc = 64
+  ecutrho = 512
   occupations = 'smearing'
   smearing = 'fd'
   degauss = 6.336d-7
@@ -33,7 +33,7 @@
  /
 
  ATOMIC_SPECIES
-  C  12.0  C.pbe-rrkjus.UPF
+  C  12.0  C.pbe-hscf.UPF
 
  ATOMIC_POSITIONS bohr
   C 0.000 0.000 0.000

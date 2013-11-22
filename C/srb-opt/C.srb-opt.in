@@ -26,8 +26,8 @@
   mixing_beta = 0.3
  /
 
- &shirley
-  use_shirley = .true.
+ &srb
+  use_srb = .true.
   trace_tol = 1.D-5
   basis_life = 3
  /

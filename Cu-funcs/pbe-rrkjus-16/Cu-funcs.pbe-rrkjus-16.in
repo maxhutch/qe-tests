@@ -25,8 +25,8 @@
   diagonalization = 'david'
  /
 
- &shirley
-  use_shirley = .false.
+ &srb
+  use_srb = .false.
  /
 
  ATOMIC_SPECIES

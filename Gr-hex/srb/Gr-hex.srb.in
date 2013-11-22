@@ -28,8 +28,8 @@
   mixing_beta = 0.3
  /
 
- &shirley
-  use_shirley = .true.
+ &srb
+  use_srb = .true.
   ntrans(3) = 0
  /
 

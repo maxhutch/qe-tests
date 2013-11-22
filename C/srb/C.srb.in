@@ -6,6 +6,7 @@
   outdir = './raw'
   prefix = 'C-diamond'
   pseudo_dir = '../pseudo'
+  verbosity = 'high'
  /
 
  &system
@@ -26,8 +27,8 @@
   mixing_beta = 0.3
  /
 
- &shirley
-  use_shirley = .true.
+ &srb
+  use_srb = .true.
  /
 
  ATOMIC_SPECIES

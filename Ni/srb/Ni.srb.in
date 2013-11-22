@@ -29,9 +29,8 @@
   diagonalization = 'david'
  /
 
- &shirley
-  use_shirley = .true.
-  use_cuda = .false.
+ &srb
+  use_srb = .true.
  /
 
  ATOMIC_SPECIES

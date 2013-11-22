@@ -7,6 +7,7 @@
   outdir = './raw'
   prefix = 'Au'
   pseudo_dir = '../pseudo'
+  verbosity = 'high'
  /
 
  &system
@@ -25,8 +26,8 @@
   diagonalization = 'david'
  /
 
- &shirley
-  use_shirley = .false.
+ &srb
+  use_srb = .false.
  /
 
  ATOMIC_SPECIES
