@@ -23,8 +23,8 @@
   diagonalization = 'david' 
   conv_thr = 1.d-12 
  / 
- &shirley
-  use_shirley = .false. 
+ &srb
+  use_srb = .false. 
  / 
  ATOMIC_SPECIES
   Cu 63.546  Cu.pbe-d-rrkjus.UPF

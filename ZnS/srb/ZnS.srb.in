@@ -24,8 +24,8 @@
   diagonalization = 'david'
  /
 
- &shirley
-  use_shirley = .true.
+ &srb
+  use_srb = .true.
  /
 
  ATOMIC_SPECIES
@@ -36,7 +36,7 @@
   Zn -0.125 -0.125 -0.125
   S   0.125  0.125  0.125
 
- K_POINTS crystal
+ Q_POINTS crystal
   7
   0.0 0.0 0.0 1.0
   0.5 0.0 0.0 1.0
@@ -46,7 +46,7 @@
   0.5 0.0 0.5 1.0
   0.5 0.5 0.0 1.0
 
- Q_POINTS automatic
+ K_POINTS automatic
   8 8 8 0 0 0
 
 @run
@@ -59,7 +59,7 @@
   nosym = .true.
  /
 
- Q_POINTS crystal_b
+ K_POINTS crystal_b
   12
   0.0 0.0 0.0 32
   0.5 0.0 0.5 16

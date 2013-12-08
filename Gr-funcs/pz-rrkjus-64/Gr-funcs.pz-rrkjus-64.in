@@ -28,8 +28,8 @@
   mixing_beta = 0.3
  /
 
- &shirley
-  use_shirley = .false.
+ &srb
+  use_srb = .false.
  /
 
  ATOMIC_SPECIES

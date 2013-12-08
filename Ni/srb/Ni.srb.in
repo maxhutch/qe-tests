@@ -29,9 +29,8 @@
   diagonalization = 'david'
  /
 
- &shirley
-  use_shirley = .true.
-  use_cuda = .false.
+ &srb
+  use_srb = .true.
  /
 
  ATOMIC_SPECIES
@@ -40,7 +39,7 @@
  ATOMIC_POSITIONS
   Ni 0.0 0.0 0.0
 
- K_POINTS crystal
+ Q_POINTS crystal
   7
   0.0 0.0 0.0 1.0
   0.5 0.0 0.0 1.0
@@ -50,7 +49,7 @@
   0.5 0.0 0.5 1.0
   0.5 0.5 0.0 1.0
 
- Q_POINTS automatic
+ K_POINTS automatic
   16 16 16 1 1 1
 
 @run
@@ -67,7 +66,7 @@
   diagonalization = 'cg'
  /
 
- Q_POINTS crystal_b
+ K_POINTS crystal_b
   12
   0.0 0.0 0.0 32
   0.5 0.0 0.5 16

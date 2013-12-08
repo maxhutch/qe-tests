@@ -25,8 +25,8 @@
   diagonalization = 'david'
  /
 
- &shirley
-  use_shirley = .true.
+ &srb
+  use_srb = .true.
   use_cuda = .true.
  /
 
@@ -36,7 +36,7 @@
  ATOMIC_POSITIONS crystal
   Au    0.0000000  0.0000000  0.0000000
 
- K_POINTS crystal
+ Q_POINTS crystal
   7
   0.0 0.0 0.0 1.0
   0.5 0.0 0.0 1.0
@@ -46,7 +46,7 @@
   0.5 0.0 0.5 1.0
   0.5 0.5 0.0 1.0
 
- Q_POINTS automatic
+ K_POINTS automatic
   16 16 16 1 1 1
 
 @run
@@ -59,7 +59,7 @@
   nosym = .true.
  /
 
-  Q_POINTS tpiba
+  K_POINTS tpiba
   15
   0.0  0.0  0.0  1.0
   0.5  0.0  0.0  1.0
