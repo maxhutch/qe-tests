@@ -28,6 +28,7 @@
 
  &srb
   use_srb = .true.
+  min_aux_size = 100
  /
 
  ATOMIC_SPECIES

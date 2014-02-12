@@ -1,5 +1,15 @@
+! simple, no projectors:
 Na
-Ni
+
+! USPP metal
 Au
+
+! USPP, 2 spins
+Ni
+
+! Insulator
 ZnS
+
+! Insulator with forces
+ZnS-f
 Gr-hex
